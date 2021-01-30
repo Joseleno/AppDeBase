@@ -1,2 +1,2 @@
 # AppDeBase
-Une petite application qui veulent commencer avec C#, ASP.NET CORE
+Une petite application pour aider tous ceux qui veulent commencer avec C #, ASP.NET CORE
