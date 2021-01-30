@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "AppDeBase.Donnees/1.0.0": {
+        "runtime": {
+          "AppDeBase.Donnees.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AppDeBase.Donnees/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

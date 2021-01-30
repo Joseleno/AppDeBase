@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "5SNdjO3/K9iO/6hqwEO0WJxC7qPQMwsiEbf2WtNJd3poWtOMp03FNrXYRuL1J4NFsOsNFJLsBRSBIsFyFHeSxw==",
+  "dgSpecHash": "fOoNeeCubZnQHB7jqW5+YTapyp13U0N7o4bTPEVK7bXcPsadakstdtmCPJkfiShjHSlwRjoiqD3wIcmrHCSAKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\josel\\source\\repos\\AppDeBase\\src\\AppDeBase.Donnees\\AppDeBase.Donnees.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\josel\\.nuget\\packages\\microsoft.netcore.app\\2.2.0\\microsoft.netcore.app.2.2.0.nupkg.sha512",
+    "C:\\Users\\josel\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.2.0\\microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",
+    "C:\\Users\\josel\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.2.0\\microsoft.netcore.dotnethostpolicy.2.2.0.nupkg.sha512",
+    "C:\\Users\\josel\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.2.0\\microsoft.netcore.dotnethostresolver.2.2.0.nupkg.sha512",
+    "C:\\Users\\josel\\.nuget\\packages\\microsoft.netcore.platforms\\2.2.0\\microsoft.netcore.platforms.2.2.0.nupkg.sha512",
+    "C:\\Users\\josel\\.nuget\\packages\\microsoft.netcore.targets\\2.0.0\\microsoft.netcore.targets.2.0.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
