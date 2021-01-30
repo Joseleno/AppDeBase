@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "AppDeBase.Affaires/1.0.0": {
+        "runtime": {
+          "AppDeBase.Affaires.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AppDeBase.Affaires/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
