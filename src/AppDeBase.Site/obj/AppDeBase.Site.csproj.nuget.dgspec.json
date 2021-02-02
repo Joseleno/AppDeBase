@@ -4,6 +4,142 @@
     "C:\\Users\\josel\\source\\repos\\AppDeBase\\src\\AppDeBase.Site\\AppDeBase.Site.csproj": {}
   },
   "projects": {
+    "C:\\Users\\josel\\source\\repos\\AppDeBase\\src\\AppDeBase.Affaires\\AppDeBase.Affaires.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\josel\\source\\repos\\AppDeBase\\src\\AppDeBase.Affaires\\AppDeBase.Affaires.csproj",
+        "projectName": "AppDeBase.Affaires",
+        "projectPath": "C:\\Users\\josel\\source\\repos\\AppDeBase\\src\\AppDeBase.Affaires\\AppDeBase.Affaires.csproj",
+        "packagesPath": "C:\\Users\\josel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\josel\\source\\repos\\AppDeBase\\src\\AppDeBase.Affaires\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\josel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\josel\\source\\repos\\AppDeBase\\src\\AppDeBase.Donnees\\AppDeBase.Donnees.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\josel\\source\\repos\\AppDeBase\\src\\AppDeBase.Donnees\\AppDeBase.Donnees.csproj",
+        "projectName": "AppDeBase.Donnees",
+        "projectPath": "C:\\Users\\josel\\source\\repos\\AppDeBase\\src\\AppDeBase.Donnees\\AppDeBase.Donnees.csproj",
+        "packagesPath": "C:\\Users\\josel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\josel\\source\\repos\\AppDeBase\\src\\AppDeBase.Donnees\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\josel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
+            "projectReferences": {
+              "C:\\Users\\josel\\source\\repos\\AppDeBase\\src\\AppDeBase.Affaires\\AppDeBase.Affaires.csproj": {
+                "projectPath": "C:\\Users\\josel\\source\\repos\\AppDeBase\\src\\AppDeBase.Affaires\\AppDeBase.Affaires.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\josel\\source\\repos\\AppDeBase\\src\\AppDeBase.Site\\AppDeBase.Site.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -30,7 +166,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "targetAlias": "netcoreapp2.2",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\josel\\source\\repos\\AppDeBase\\src\\AppDeBase.Donnees\\AppDeBase.Donnees.csproj": {
+                "projectPath": "C:\\Users\\josel\\source\\repos\\AppDeBase\\src\\AppDeBase.Donnees\\AppDeBase.Donnees.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
