@@ -33,3 +33,7 @@ C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\AppDeBase.Site.pdb
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\AppDeBase.Site.genruntimeconfig.cache
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\AppDeBase.Site.csproj.CopyComplete
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\bin\Debug\netcoreapp2.2\AppDeBase.Affaires.dll
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\bin\Debug\netcoreapp2.2\AppDeBase.Donnees.dll
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\bin\Debug\netcoreapp2.2\AppDeBase.Donnees.pdb
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\bin\Debug\netcoreapp2.2\AppDeBase.Affaires.pdb

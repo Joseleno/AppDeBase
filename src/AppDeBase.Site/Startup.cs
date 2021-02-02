@@ -1,4 +1,5 @@
-﻿using AppDeBase.Site.Data;
+﻿using AppDeBase.Donnees.Context;
+using AppDeBase.Site.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -38,6 +39,11 @@ namespace AppDeBase.Site
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddDbContext<AppDeBaseDbContext>(options =>
+                            options.UseSqlServer(
+                                Configuration.GetConnectionString("DefaultConnection")));
+
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
