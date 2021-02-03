@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace AppDeBase.Affaires.Interfaces
 {
-    public interface IRepository<TEntity> : IDisposable where TEntity : Entity
+    public interface IRepository<T> : IDisposable where T : Entity
     {
-        Task Ajouter(TEntity entity);
+        Task Ajouter(T entity);
 
-        Task<TEntity> ObtenirParId(Guid Id);
+        Task<T> ObtenirParId(Guid id);
 
-        Task<List<TEntity>> ObtenirTouts();
+        Task<List<T>> ObtenirTouts();
 
-        Task Supprimir(Guid Id);
+        Task Supprimir(Guid id);
 
-        Task Update(TEntity entity);
+        Task Update(T entity);
 
         Task<int> SaveChanges();
 
-        Task<IEnumerable<TEntity>> Chercher(Expression<Func<TEntity, bool>> predicat);
+        Task<IEnumerable<T>> Chercher(Expression<Func<T, bool>> predicat);
     }
 }
