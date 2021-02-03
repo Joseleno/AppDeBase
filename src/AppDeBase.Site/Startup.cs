@@ -1,4 +1,6 @@
-﻿using AppDeBase.Donnees.Context;
+﻿using AppDeBase.Affaires.Interfaces;
+using AppDeBase.Donnees.Context;
+using AppDeBase.Donnees.Repository;
 using AppDeBase.Site.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -49,6 +51,11 @@ namespace AppDeBase.Site
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddScoped<AppDeBaseDbContext>();
+            services.AddScoped<IFournisseurRepository, FournisseurRepository>();
+            services.AddScoped<IAdresseRepository, AdresseRepository>();
+            services.AddScoped<IProduitRepository, ProduitRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
