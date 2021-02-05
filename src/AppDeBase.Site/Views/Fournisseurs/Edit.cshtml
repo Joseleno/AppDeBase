@@ -1,0 +1,50 @@
+﻿@model AppDeBase.Site.ViewModels.FournisseurViewModel
+
+@{
+    ViewData["Title"] = "Editar Fornecedor";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<hr />
+
+<form asp-action="Edit">
+
+    <vc:Summary></vc:Summary>
+
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+
+            <label asp-for="Nom"></label>
+            <input asp-for="Nom" class="form-control" />
+            <span asp-validation-for="Nom" class="text-danger"></span>
+
+            <label asp-for="Document"></label>
+            <input asp-for="Document" class="form-control" />
+            <span asp-validation-for="Document" class="text-danger"></span>
+        </div>
+
+        <div class="form-group col-md-6">
+
+            <label asp-for="TypeFournisseur"></label>
+            <div>
+                <input type="radio" value="1" asp-for="TypeFournisseur" checked="@(Model.TypeFournisseur == 1)" /> Particulier
+                <input type="radio" value="2" asp-for="TypeFournisseur" checked="@(Model.TypeFournisseur == 2)" /> Entreprise
+            </div>
+            <div>
+                &nbsp;
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Acitve" /> @Html.DisplayNameFor(model => model.Acitve)
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Salvar" class="btn btn-primary" />
+    </div>
+</form>

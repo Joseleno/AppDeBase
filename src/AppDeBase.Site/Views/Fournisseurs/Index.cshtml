@@ -1,0 +1,49 @@
+﻿@model IEnumerable<AppDeBase.Site.ViewModels.FournisseurViewModel>
+
+@{
+    ViewData["Title"] = "Fournisseurs";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p supress-by-claim-name="Fournisseur" supress-by-claim-value="Ajouter">
+    <a class="btn btn-info" asp-action="Create">Nouveua Fournisseur</a>
+</p>
+
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Document)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Acitve)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Document)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Acitve)
+                </td>
+                <td class="text-right">
+                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id"><spam class="fa fa-search"></spam></a>
+                    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id"><spam class="fa fa-pencil-alt"></spam></a>
+                    <a class="btn btn-danger" asp-action="Supprimir" asp-route-id="@item.Id"><spam class="fa fa-trash"></spam></a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
