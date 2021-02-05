@@ -1,0 +1,9 @@
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Affaires\bin\Debug\netcoreapp2.2\AppDeBase.Affaires.deps.json
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Affaires\bin\Debug\netcoreapp2.2\AppDeBase.Affaires.dll
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Affaires\bin\Debug\netcoreapp2.2\AppDeBase.Affaires.pdb
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Affaires\obj\Debug\netcoreapp2.2\AppDeBase.Affaires.csprojAssemblyReference.cache
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Affaires\obj\Debug\netcoreapp2.2\AppDeBase.Affaires.AssemblyInfoInputs.cache
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Affaires\obj\Debug\netcoreapp2.2\AppDeBase.Affaires.AssemblyInfo.cs
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Affaires\obj\Debug\netcoreapp2.2\AppDeBase.Affaires.csproj.CoreCompileInputs.cache
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Affaires\obj\Debug\netcoreapp2.2\AppDeBase.Affaires.dll
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Affaires\obj\Debug\netcoreapp2.2\AppDeBase.Affaires.pdb

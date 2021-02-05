@@ -1,37 +1,32 @@
-﻿@model DevIO.App.ViewModels.FornecedorViewModel
+﻿@model AppDeBase.Site.ViewModels.FournisseurViewModel
 
 <div class="form-group">
-    <label asp-for="Endereco.Cep" class="control-label"></label>
-    <input asp-for="Endereco.Cep" class="form-control" />
-    <span asp-validation-for="Endereco.Cep" class="text-danger"></span>
+    <label asp-for="Adresse.CodePostal" class="control-label"></label>
+    <input asp-for="Adresse.CodePostal" class="form-control" />
+    <span asp-validation-for="Adresse.CodePostal" class="text-danger"></span>
 </div>
 <div class="form-group">
-    <label asp-for="Endereco.Logradouro" class="control-label"></label>
-    <input asp-for="Endereco.Logradouro" class="form-control" />
-    <span asp-validation-for="Endereco.Logradouro" class="text-danger"></span>
+    <label asp-for="Adresse.Numero" class="control-label"></label>
+    <input asp-for="Adresse.Numero" class="form-control" />
+    <span asp-validation-for="Adresse.Numero" class="text-danger"></span>
 </div>
 <div class="form-group">
-    <label asp-for="Endereco.Numero" class="control-label"></label>
-    <input asp-for="Endereco.Numero" class="form-control" />
-    <span asp-validation-for="Endereco.Numero" class="text-danger"></span>
+    <label asp-for="Adresse.Rue" class="control-label"></label>
+    <input asp-for="Adresse.Rue" class="form-control" />
+    <span asp-validation-for="Adresse.Rue" class="text-danger"></span>
 </div>
 <div class="form-group">
-    <label asp-for="Endereco.Complemento" class="control-label"></label>
-    <input asp-for="Endereco.Complemento" class="form-control" />
-    <span asp-validation-for="Endereco.Complemento" class="text-danger"></span>
+    <label asp-for="Adresse.Complement" class="control-label"></label>
+    <input asp-for="Adresse.Complement" class="form-control" />
+    <span asp-validation-for="Adresse.Complement" class="text-danger"></span>
 </div>
 <div class="form-group">
-    <label asp-for="Endereco.Bairro" class="control-label"></label>
-    <input asp-for="Endereco.Bairro" class="form-control" />
-    <span asp-validation-for="Endereco.Bairro" class="text-danger"></span>
+    <label asp-for="Adresse.Ville" class="control-label"></label>
+    <input asp-for="Adresse.Ville" class="form-control" />
+    <span asp-validation-for="Adresse.Ville" class="text-danger"></span>
 </div>
 <div class="form-group">
-    <label asp-for="Endereco.Cidade" class="control-label"></label>
-    <input asp-for="Endereco.Cidade" class="form-control" />
-    <span asp-validation-for="Endereco.Cidade" class="text-danger"></span>
-</div>
-<div class="form-group">
-    <label asp-for="Endereco.Estado" class="control-label"></label>
-    <input asp-for="Endereco.Estado" class="form-control" />
-    <span asp-validation-for="Endereco.Estado" class="text-danger"></span>
+    <label asp-for="Adresse.Province" class="control-label"></label>
+    <input asp-for="Adresse.Province" class="form-control" />
+    <span asp-validation-for="Adresse.Province" class="text-danger"></span>
 </div>
