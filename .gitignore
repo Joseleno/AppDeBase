@@ -360,3 +360,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/src/AppDeBase.Site/Views/Fournisseurs/_Adresse.cshtml
+/src/AppDeBase.Site/Views/Fournisseurs/Supprimir.cshtml
+/src/AppDeBase.Site/Views/Fournisseurs/Index.cshtml
+/src/AppDeBase.Site/Views/Fournisseurs/Edit.cshtml
+/src/AppDeBase.Site/Views/Fournisseurs/Details.cshtml
+/src/AppDeBase.Site/Views/Fournisseurs/Create.cshtml

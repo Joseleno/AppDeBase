@@ -15,12 +15,14 @@ namespace AppDeBase.Site.ViewModels
         [StringLength(200, ErrorMessage = "Le champ {0} doit comporter entre {2} et {1} caractères", MinimumLength = 3)]
         public string Nom { get; set; }
 
+        public Guid FournisseurId { get; set; }
+
         [Required(ErrorMessage = "Le champ {0} est requis")]
         [StringLength(1000, ErrorMessage = "Le champ {0} doit comporter entre {2} et {1} caractères", MinimumLength = 3)]
         public string Description { get; set; }
 
         [DisplayName("L'Image du produit")]
-        public IFormFile ImgTélecharger { get; set; }
+        public IFormFile ImgTelecharger { get; set; }
 
         public string Image { get; set; }
 
