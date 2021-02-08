@@ -43,3 +43,4 @@ C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\AppDeBase.Site.dll
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\AppDeBase.Site.pdb
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\AppDeBase.Site.genruntimeconfig.cache
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\bin\Debug\netcoreapp2.2\libman.json
