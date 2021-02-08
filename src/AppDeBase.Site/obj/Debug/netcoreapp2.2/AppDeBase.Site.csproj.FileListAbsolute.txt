@@ -44,3 +44,9 @@ C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\AppDeBase.Site.pdb
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\AppDeBase.Site.genruntimeconfig.cache
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\bin\Debug\netcoreapp2.2\libman.json
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Produits\Create.cshtml.g.cs
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Produits\Details.cshtml.g.cs
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Produits\Edit.cshtml.g.cs
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Produits\Index.cshtml.g.cs
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Produits\Supprimir.cshtml.g.cs
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Produits\_ListProduits.cshtml.g.cs

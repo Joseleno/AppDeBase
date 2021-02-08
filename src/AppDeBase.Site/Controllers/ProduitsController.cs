@@ -160,7 +160,7 @@ namespace DevIO.App.Controllers
         {
             if (fichier.Length <= 0) return false;
 
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens", imgPrefixe + fichier.FileName);
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", imgPrefixe + fichier.FileName);
 
             if (System.IO.File.Exists(path))
             {

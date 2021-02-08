@@ -366,3 +366,4 @@ FodyWeavers.xsd
 /src/AppDeBase.Site/Views/Fournisseurs/Edit.cshtml
 /src/AppDeBase.Site/Views/Fournisseurs/Details.cshtml
 /src/AppDeBase.Site/Views/Fournisseurs/Create.cshtml
+*.jpg

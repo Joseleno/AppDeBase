@@ -1,0 +1,58 @@
+﻿@model AppDeBase.Site.ViewModels.ProduitViewModel
+
+@{
+    ViewData["Title"] = "Produit - " + Model.Nom;
+}
+
+<h4 style="padding-top: 50px">@ViewData["Title"]</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <img src="~/imagens/@Model.Image" alt="@Model.Image" style="width: 300px; height: 428px" />
+    </div>
+    <div class="col-md-6">
+        <dl>
+            <dt>
+                @Html.DisplayNameFor(model => model.FournisseurId)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Fournisseur.Nom)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Nom)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Nom)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Description)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Valeur)
+            </dt>
+            <dd>
+                @Model.Valeur.ToString("C")
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.DateInscription)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.DateInscription)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Active)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Active)
+            </dd>
+        </dl>
+
+        <div>
+            <a class="btn btn-dark" sp-action="Edit" asp-route-id="@Model.Id">Editer</a>
+            <a class="btn btn-info" asp-action="Index">Retourner</a>
+        </div>
+    </div>
+</div>
