@@ -10,8 +10,6 @@ namespace AppDeBase.Site.ViewModels
         public Guid Id { get; set; }
 
         [Required(ErrorMessage = "Le champ {0} est requis")]
-        [MaxLength(6)]
-        [MinLength(4)]
         public int Numero { get; set; }
 
         [Required(ErrorMessage = "Le champ {0} est requis")]

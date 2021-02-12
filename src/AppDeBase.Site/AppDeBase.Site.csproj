@@ -23,4 +23,9 @@
 	<ItemGroup>
 		<ProjectReference Include="..\AppDeBase.Donnees\AppDeBase.Donnees.csproj" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Views\Produits\" />
+	  <Folder Include="wwwroot\Images\" />
+	</ItemGroup>
 </Project>

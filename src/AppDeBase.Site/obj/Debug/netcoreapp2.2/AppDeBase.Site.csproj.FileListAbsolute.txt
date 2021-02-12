@@ -1,5 +1,6 @@
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\bin\Debug\netcoreapp2.2\appsettings.Development.json
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\bin\Debug\netcoreapp2.2\libman.json
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\bin\Debug\netcoreapp2.2\AppDeBase.Site.deps.json
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\bin\Debug\netcoreapp2.2\AppDeBase.Site.runtimeconfig.json
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\bin\Debug\netcoreapp2.2\AppDeBase.Site.runtimeconfig.dev.json
@@ -29,6 +30,12 @@ C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Fournisseurs\_Adresse.cshtml.g.cs
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Produits\Create.cshtml.g.cs
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Produits\Details.cshtml.g.cs
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Produits\Edit.cshtml.g.cs
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Produits\Index.cshtml.g.cs
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Produits\Supprimir.cshtml.g.cs
+C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Produits\_ListProduits.cshtml.g.cs
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\Users\josel\source\repos\AppDeBase\src\AppDeBase.Site\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs

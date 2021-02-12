@@ -55,7 +55,8 @@ namespace DevIO.App.Controllers
         public async Task<IActionResult> Create(ProduitViewModel ProduitViewModel)
         {
             ProduitViewModel = await ChargerFournisseur(ProduitViewModel);
-            if (!ModelState.IsValid) return View(ProduitViewModel);
+            if (!ModelState.IsValid)
+                return View(ProduitViewModel);
 
             var imgPrefixe = Guid.NewGuid() + "_";
             if (!await TelechargerFichier(ProduitViewModel.ImgTelecharger, imgPrefixe))
@@ -160,7 +161,7 @@ namespace DevIO.App.Controllers
         {
             if (fichier.Length <= 0) return false;
 
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/imagens", imgPrefixe + fichier.FileName);
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images", imgPrefixe + fichier.FileName);
 
             if (System.IO.File.Exists(path))
             {

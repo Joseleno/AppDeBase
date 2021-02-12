@@ -1,0 +1,73 @@
+﻿@model AppDeBase.Site.ViewModels.ProduitViewModel
+
+@{
+    ViewData["Title"] = "Nouveau Produit";
+}
+
+<h3 style="padding-top: 50px">@ViewData["Title"] </h3>
+
+<hr />
+<div class="row">
+    <div class="col-md-10">
+        <form enctype="multipart/form-data" asp-action="Create">
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FournisseurId" class="control-label"></label>
+                <select asp-for="FournisseurId" class="form-control" asp-items="@(new SelectList(Model.Fournisseurs, "Id", "Nom"))">
+                    <option></option>
+                </select>
+
+                <span asp-validation-for="FournisseurId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nom" class="control-label"></label>
+                <input asp-for="Nom" class="form-control" />
+                <span asp-validation-for="Nom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea cols="40" rows="5" asp-for="Description" class="form-control"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImgTelecharger" class="control-label"></label>
+
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="ImgTelecharger" asp-for="ImgTelecharger">
+                    <label data-browse="Chercher" style="width: 400px" class="custom-file-label" for="ImgTelecharger"></label>
+                    <label style="display: none" id="img_nom"></label>
+                </div>
+
+                <span asp-validation-for="ImgTelecharger" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Valeur" class="control-label"></label>
+                <input asp-for="Valeur" class="form-control" />
+                <span asp-validation-for="Valeur" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Active" /> @Html.DisplayNameFor(model => model.Active)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enrigester" class="btn btn-primary" />
+                <a class="btn btn-info" asp-action="Index">Retourner</a>
+            </div>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        $("#ImgTelecharger").change(function () {
+            $("#img_nom").text(this.files[0].name);
+            $("#img_nom")[0].style.display = 'block';
+        });
+
+        $("#ImgTelecharger").attr("data-val", "true");
+        $("#ImgTelecharger").attr("data-val-required", "Remplissez le champ Image");
+    </script>
+}

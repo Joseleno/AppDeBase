@@ -1,6 +1,7 @@
 ﻿using AppDeBase.Affaires.Interfaces;
 using AppDeBase.Donnees.Context;
 using AppDeBase.Donnees.Repository;
+using AppDeBase.Extensions;
 using AppDeBase.Site.Data;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
@@ -9,12 +10,15 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -29,12 +33,10 @@ namespace AppDeBase.Site
             Configuration = configuration;
         }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<CookiePolicyOptions>(options =>
             {
-                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
@@ -53,12 +55,26 @@ namespace AppDeBase.Site
 
             services.AddAutoMapper(typeof(Startup));
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc(o =>
+            {
+                o.ModelBindingMessageProvider.SetAttemptedValueIsInvalidAccessor((x, y) => "La valeur saisie n'est pas valide pour ce champ.");
+                o.ModelBindingMessageProvider.SetMissingBindRequiredValueAccessor(x => "Ce champ doit être rempli.");
+                o.ModelBindingMessageProvider.SetMissingKeyOrValueAccessor(() => "Ce champ doit être rempli.");
+                o.ModelBindingMessageProvider.SetNonPropertyAttemptedValueIsInvalidAccessor(x => "La valeur saisie n'est pas valide pour ce champ.");
+                o.ModelBindingMessageProvider.SetNonPropertyUnknownValueIsInvalidAccessor(() => "La valeur saisie n'est pas valide pour ce champ.");
+                o.ModelBindingMessageProvider.SetNonPropertyValueMustBeANumberAccessor(() => "Le champ doit être numérique.");
+                o.ModelBindingMessageProvider.SetUnknownValueIsInvalidAccessor(x => "La valeur saisie n'est pas valide pour ce champ.");
+                o.ModelBindingMessageProvider.SetValueIsInvalidAccessor(x => "La valeur saisie n'est pas valide pour ce champ.");
+                o.ModelBindingMessageProvider.SetValueMustBeANumberAccessor(x => "Le champ doit être numérique.");
+                o.ModelBindingMessageProvider.SetValueMustNotBeNullAccessor(x => "Ce champ doit être rempli.");
+            }
+            ).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.AddScoped<AppDeBaseDbContext>();
             services.AddScoped<IFournisseurRepository, FournisseurRepository>();
             services.AddScoped<IAdresseRepository, AdresseRepository>();
             services.AddScoped<IProduitRepository, ProduitRepository>();
+            services.AddSingleton<IValidationAttributeAdapterProvider, DeviseValidationAttributeAdapterProvider>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -81,6 +97,16 @@ namespace AppDeBase.Site
             app.UseCookiePolicy();
 
             app.UseAuthentication();
+
+            var defaultCulture = new CultureInfo("fr-CA");
+            var localizationOptions = new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture(defaultCulture),
+                SupportedCultures = new List<CultureInfo> { defaultCulture },
+                SupportedUICultures = new List<CultureInfo> { defaultCulture }
+            };
+
+            app.UseRequestLocalization(localizationOptions);
 
             app.UseMvc(routes =>
             {
