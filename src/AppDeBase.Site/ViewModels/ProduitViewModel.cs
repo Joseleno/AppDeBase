@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AppDeBase.Extensions;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace AppDeBase.Site.ViewModels
         [StringLength(200, ErrorMessage = "Le champ {0} doit comporter entre {2} et {1} caractères", MinimumLength = 3)]
         public string Nom { get; set; }
 
+        [DisplayName("Fournisseur")]
+        [Required(ErrorMessage = "Le champ {0} est requis")]
         public Guid FournisseurId { get; set; }
 
         [Required(ErrorMessage = "Le champ {0} est requis")]
@@ -26,6 +29,8 @@ namespace AppDeBase.Site.ViewModels
 
         public string Image { get; set; }
 
+        [DeviseAtribut]
+        [DisplayFormat(DataFormatString = "{0:#.####}")]
         [DisplayName("Prix")]
         [Required(ErrorMessage = "Le champ {0} est requis")]
         public decimal Valeur { get; set; }

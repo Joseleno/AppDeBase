@@ -55,7 +55,8 @@ namespace DevIO.App.Controllers
         public async Task<IActionResult> Create(ProduitViewModel ProduitViewModel)
         {
             ProduitViewModel = await ChargerFournisseur(ProduitViewModel);
-            if (!ModelState.IsValid) return View(ProduitViewModel);
+            if (!ModelState.IsValid)
+                return View(ProduitViewModel);
 
             var imgPrefixe = Guid.NewGuid() + "_";
             if (!await TelechargerFichier(ProduitViewModel.ImgTelecharger, imgPrefixe))
